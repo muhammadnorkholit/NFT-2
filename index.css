@@ -1,0 +1,157 @@
+:root {
+  --clr-dark: rgb(22, 19, 22);
+  --clr-dark-second: rgb(35, 32, 35);
+  --clr-purple: rgb(255, 0, 255);
+}
+
+a:hover {
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: var(--clr-dark);
+  color: white;
+}
+section {
+  padding: 3rem 0;
+}
+.to-top {
+  position: fixed;
+  bottom: 2%;
+  z-index: 9999;
+  right: 2%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.text-purple {
+  color: var(--clr-purple);
+}
+.bg-purple {
+  background-color: var(--clr-purple);
+}
+
+.bg-dark {
+  background-color: var(--clr-dark);
+}
+.ratio {
+  aspect-ratio: 1/0.8;
+}
+.min-vh-100 {
+  min-height: 100vh;
+}
+img {
+  aspect-ratio: 1/0.8;
+}
+.gap > * {
+  padding: 15px;
+}
+.card > * {
+  color: white;
+}
+.btn-purple {
+  color: white;
+  background-color: var(--clr-purple);
+}
+input,
+text,
+textarea {
+  background-color: var(--clr-dark-second) !important;
+}
+input:is(:focus),
+text:is(:focus),
+textarea:is(:focus) {
+  background-color: var(--clr-dark-second) !important;
+}
+.search-input {
+  width: 50%;
+}
+.btn-purple:hover {
+  background-color: white;
+  color: var(--clr-purple);
+}
+.card-big {
+  transform: scaleY(1.1);
+}
+.bg-dark {
+  background-color: var(--clr-dark) !important;
+}
+.bg-dark-second {
+  background-color: var(--clr-dark-second);
+}
+
+.card {
+  background-color: var(--clr-dark-second);
+}
+
+footer :is(a, p) {
+  color: white;
+  opacity: 0.6;
+  transition: all 0.5s;
+  text-decoration: none !important;
+}
+
+footer a:hover {
+  transform: translateX(5px);
+  color: white;
+  opacity: 1;
+}
+
+.animate {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.8s;
+}
+.top {
+  transform: translateY(-20px);
+}
+.bottom {
+  transform: translateY(20px);
+}
+.right {
+  transform: translateX(20px);
+}
+.left {
+  transform: translateX(-20px);
+}
+
+.animate.show {
+  transform: translate(0, 0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.element {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45%;
+}
+.element img {
+  width: 100%;
+}
+.navbar {
+  transition: all 0.6s;
+}
+.border-0 {
+  border: none !important;
+}
+.shadow-none {
+  box-shadow: none !important;
+}
+.outline-none {
+  outline: none !important ;
+}
+@media (max-width: 768px) {
+  .card-big {
+    transform: scale(1);
+  }
+  .search-input {
+    width: 100%;
+  }
+  .element {
+    width: 80%;
+  }
+}
